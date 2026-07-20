@@ -1,0 +1,222 @@
+/* =========================================================
+   LA VUELTA TXIRRIDULARIAK — Hoja de estilo
+   Paleta oficial La Vuelta (rojo del logo) + acento bandera España
+   ========================================================= */
+
+:root {
+  /* Marca */
+  --rojo-vuelta: #C5291A;
+  --rojo-vuelta-oscuro: #8f1e13;
+  --rojo-vuelta-luz: #e8442f;
+  --amarillo-espana: #FFC400;
+
+  /* Base (asfalto oscuro, igual familia visual que TOUR-2026) */
+  --asfalto-0: #101214;
+  --asfalto-1: #16191c;
+  --asfalto-2: #1e2226;
+  --asfalto-3: #2a2f34;
+  --borde: #33393e;
+
+  /* Texto */
+  --texto: #f4efe6;
+  --texto-mute: #9aa2a8;
+  --texto-tenue: #6c747a;
+
+  /* Estados / jerseys */
+  --maillot-rojo: var(--rojo-vuelta);
+  --maillot-puntos: #1f9d55;      /* verde regularidad, igual convención que Tour */
+  --maillot-montana: #d98c00;     /* lunares */
+  --subida: #33c17a;
+  --bajada: #e8442f;
+
+  --radio: 10px;
+  --radio-chip: 999px;
+  --fuente-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --fuente-cuerpo: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--asfalto-0);
+  background-image:
+    linear-gradient(180deg, var(--asfalto-1) 0%, var(--asfalto-0) 320px);
+  color: var(--texto);
+  font-family: var(--fuente-cuerpo);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .display {
+  font-family: var(--fuente-display);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: var(--texto);
+}
+
+a { color: var(--rojo-vuelta-luz); }
+
+/* ---------------------------------------------------------
+   Cabecera — franja de "banderola" recortada, motivo tomado
+   del propio logotipo de La Vuelta (paralelogramo)
+--------------------------------------------------------- */
+.cabecera {
+  position: relative;
+  background: var(--rojo-vuelta);
+  padding: 18px 20px 26px;
+  overflow: hidden;
+}
+
+.cabecera::after {
+  /* franja bandera España, fina, discreta, al pie de la cabecera */
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 6px;
+  background: linear-gradient(90deg,
+    var(--rojo-vuelta-oscuro) 0 25%,
+    var(--amarillo-espana) 25% 75%,
+    var(--rojo-vuelta-oscuro) 75% 100%);
+}
+
+.cabecera .logo-vuelta {
+  height: 34px;
+  display: block;
+}
+
+.cabecera .titulo-comp {
+  font-family: var(--fuente-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.95;
+}
+
+/* Motivo "banderola": parallelogramo recortado (skew), usado
+   como separador de sección en vez de una simple <hr> */
+.banderola {
+  position: relative;
+  display: inline-block;
+  padding: 6px 22px 6px 16px;
+  background: var(--rojo-vuelta);
+  color: #fff;
+  font-family: var(--fuente-display);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  clip-path: polygon(6% 0, 100% 0, 94% 100%, 0% 100%);
+  margin: 18px 0 10px;
+}
+
+/* ---------------------------------------------------------
+   Tarjetas / secciones
+--------------------------------------------------------- */
+.tarjeta {
+  background: var(--asfalto-2);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.fila-clasi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--asfalto-3);
+}
+.fila-clasi:last-child { border-bottom: none; }
+
+.puesto {
+  font-family: var(--fuente-display);
+  font-size: 1rem;
+  width: 26px;
+  text-align: center;
+  color: var(--texto-mute);
+}
+
+.nombre-part { flex: 1; font-weight: 600; }
+.puntos-part { font-family: var(--fuente-display); font-size: 1.05rem; }
+
+.flecha-sube { color: var(--subida); font-size: 0.8rem; }
+.flecha-baja { color: var(--bajada); font-size: 0.8rem; }
+
+/* Jerseys / badges */
+.jersey {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  margin-right: 4px;
+}
+.jersey.rojo    { background: var(--maillot-rojo); }
+.jersey.puntos  { background: var(--maillot-puntos); }
+.jersey.montana { background: var(--maillot-montana); background-image: radial-gradient(circle, #fff 22%, transparent 24%); background-size: 8px 8px; }
+
+/* Chips de tipo de etapa (icono + texto) */
+.chip-etapa {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radio-chip);
+  background: var(--asfalto-3);
+  font-size: 0.78rem;
+  color: var(--texto-mute);
+}
+
+/* ---------------------------------------------------------
+   Navegación inferior (mobile-first, igual patrón que TOUR)
+--------------------------------------------------------- */
+.nav-inferior {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  display: flex;
+  background: var(--asfalto-1);
+  border-top: 1px solid var(--borde);
+  padding: 6px 0 10px;
+  z-index: 50;
+}
+.nav-inferior .item {
+  flex: 1;
+  text-align: center;
+  color: var(--texto-tenue);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  font-family: var(--fuente-display);
+}
+.nav-inferior .item.activo { color: var(--rojo-vuelta-luz); }
+.nav-inferior .item .icono { display: block; font-size: 1.15rem; margin-bottom: 2px; }
+
+/* Botones */
+.btn {
+  font-family: var(--fuente-display);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: var(--radio);
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.btn-primario { background: var(--rojo-vuelta); color: #fff; }
+.btn-primario:hover { background: var(--rojo-vuelta-luz); }
+.btn-secundario { background: var(--asfalto-3); color: var(--texto); }
+
+/* Tablas admin */
+table.admin-tabla { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+table.admin-tabla th, table.admin-tabla td {
+  border-bottom: 1px solid var(--borde);
+  padding: 6px 8px;
+  text-align: left;
+}
+table.admin-tabla th { color: var(--texto-mute); font-weight: 400; text-transform: uppercase; font-size: 0.72rem; }
+
+/* Utilidades */
+.mute { color: var(--texto-mute); }
+.centro { text-align: center; }
+.oculto { display: none !important; }

@@ -1,0 +1,31 @@
+{
+  "competicion": "LA VUELTA TXIRRIDULARIAK",
+  "temporada": 2026,
+  "etapas": [
+    { "numero": 1,  "fecha": "2026-08-22", "tipo": "crono",     "recorrido": "Mónaco > Mónaco",                                  "km": 9,     "descanso": false },
+    { "numero": 2,  "fecha": "2026-08-23", "tipo": "ondulada",  "recorrido": "Mónaco > Manosque",                                "km": 215.2, "descanso": false },
+    { "numero": 3,  "fecha": "2026-08-24", "tipo": "media",     "recorrido": "Gruissan - Aude > Font Romeu",                     "km": 166.7, "descanso": false },
+    { "numero": 4,  "fecha": "2026-08-25", "tipo": "montana",   "recorrido": "Andorra la Vella > Andorra la Vella",              "km": 104.9, "descanso": false },
+    { "numero": 5,  "fecha": "2026-08-26", "tipo": "ondulada",  "recorrido": "Falset . Costa Daurada > Roquetes. Terres de l'Ebre", "km": 171.1, "descanso": false },
+    { "numero": 6,  "fecha": "2026-08-27", "tipo": "media",     "recorrido": "Alcossebre > Castelló",                            "km": 176.8, "descanso": false },
+    { "numero": 7,  "fecha": "2026-08-28", "tipo": "montana",   "recorrido": "Vall d'Alba > Aramón Valdelinares",                "km": 149.9, "descanso": false },
+    { "numero": 8,  "fecha": "2026-08-29", "tipo": "llana",     "recorrido": "Puçol > Xeraco",                                   "km": 176.4, "descanso": false },
+    { "numero": 9,  "fecha": "2026-08-30", "tipo": "montana",   "recorrido": "La Vila Joiosa / Villajoyosa > Alto de Aitana. Costa Blanca", "km": 187.5, "descanso": false },
+    { "numero": 0,  "fecha": "2026-08-31", "tipo": "descanso",  "recorrido": "Día de descanso 1",                                "km": 0,     "descanso": true },
+    { "numero": 10, "fecha": "2026-09-01", "tipo": "ondulada",  "recorrido": "Alcaraz > Elche de la Sierra",                     "km": 184.5, "descanso": false },
+    { "numero": 11, "fecha": "2026-09-02", "tipo": "llana",     "recorrido": "Cartagena > Lorca",                                "km": 156.1, "descanso": false },
+    { "numero": 12, "fecha": "2026-09-03", "tipo": "montana",   "recorrido": "Vera > Calar Alto",                                "km": 166.5, "descanso": false },
+    { "numero": 13, "fecha": "2026-09-04", "tipo": "media",     "recorrido": "Almuñécar > Loja",                                 "km": 193.2, "descanso": false },
+    { "numero": 14, "fecha": "2026-09-05", "tipo": "montana",   "recorrido": "Jaén > Sierra de La Pandera",                      "km": 152.7, "descanso": false },
+    { "numero": 15, "fecha": "2026-09-06", "tipo": "media",     "recorrido": "Palma del Río > Córdoba",                          "km": 181.2, "descanso": false },
+    { "numero": 0,  "fecha": "2026-09-07", "tipo": "descanso",  "recorrido": "Día de descanso 2",                                "km": 0,     "descanso": true },
+    { "numero": 16, "fecha": "2026-09-08", "tipo": "ondulada",  "recorrido": "Cortegana > La Rábida. Palos de la Frontera",      "km": 186,   "descanso": false },
+    { "numero": 17, "fecha": "2026-09-09", "tipo": "llana",     "recorrido": "Dos Hermanas > Sevilla",                           "km": 189.2, "descanso": false },
+    { "numero": 18, "fecha": "2026-09-10", "tipo": "crono",     "recorrido": "El Puerto de Santa María > Jerez de la Frontera",  "km": 32.5,  "descanso": false },
+    { "numero": 19, "fecha": "2026-09-11", "tipo": "ondulada_final_alto", "recorrido": "Vélez-Málaga > Peñas Blancas. Estepona", "km": 205.1, "descanso": false },
+    { "numero": 20, "fecha": "2026-09-12", "tipo": "montana",   "recorrido": "La Calahorra > Collado del Alguacil",              "km": 187,   "descanso": false },
+    { "numero": 21, "fecha": "2026-09-13", "tipo": "llana",     "recorrido": "Carrefour Granada > Granada",                      "km": 99.4,  "descanso": false }
+  ],
+  "resultados": {},
+  "participantes": {}
+}

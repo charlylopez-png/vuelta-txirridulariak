@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Admin · LA VUELTA TXIRRIDULARIAK</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<style>
+  textarea, input, select {
+    width: 100%; background: var(--asfalto-3); color: var(--texto);
+    border: 1px solid var(--borde); border-radius: 6px; padding: 8px;
+    font-family: var(--fuente-cuerpo); margin-bottom: 8px;
+  }
+  label { font-size: 0.78rem; color: var(--texto-mute); text-transform: uppercase; }
+  .aviso { background: var(--asfalto-3); border-left: 3px solid var(--amarillo-espana); padding: 8px 10px; font-size: 0.85rem; margin-bottom: 10px; }
+  .ok { color: var(--subida); }
+  .error { color: var(--bajada); }
+</style>
+</head>
+<body>
+
+<header class="cabecera">
+  <img src="img/logo-vuelta.png" alt="La Vuelta" class="logo-vuelta" style="height:28px;">
+  <div class="titulo-comp">Panel de administración</div>
+</header>
+
+<main style="padding: 14px 14px 40px; max-width: 700px; margin: 0 auto;">
+
+  <div class="banderola">Configuración GitHub</div>
+  <div class="tarjeta">
+    <div class="aviso">El token se guarda solo en este navegador (localStorage). Si cambias de dispositivo, tendrás que volver a introducirlo — guárdalo en tu gestor de contraseñas.</div>
+    <label>Usuario/organización</label>
+    <input id="cfg-owner" placeholder="charlylopez-png">
+    <label>Repositorio</label>
+    <input id="cfg-repo" placeholder="vuelta-txirridulariak26">
+    <label>Rama</label>
+    <input id="cfg-branch" placeholder="main" value="main">
+    <label>Token (fine-grained personal access token, permiso Contents: Read & Write)</label>
+    <input id="cfg-token" type="password" placeholder="github_pat_...">
+    <button class="btn btn-secundario" onclick="guardarConfig()">Guardar configuración</button>
+    <span id="cfg-estado"></span>
+  </div>
+
+  <div class="banderola">Resultado de etapa</div>
+  <div class="tarjeta">
+    <label>Nº de etapa</label>
+    <input id="et-numero" type="number" min="1" max="21">
+    <label>Etapa (posiciones 1..N, id de corredor separados por coma)</label>
+    <textarea id="et-etapa" rows="2" placeholder="EVENEPOEL_REMCO, VINGEGAARD_JONAS, ..."></textarea>
+    <label>General (maillot rojo tras la etapa)</label>
+    <textarea id="et-general" rows="2"></textarea>
+    <label>Puntos (regularidad, maillot verde)</label>
+    <textarea id="et-puntos" rows="2"></textarea>
+    <label>Montaña (maillot de lunares)</label>
+    <textarea id="et-montana" rows="2"></textarea>
+    <label>Equipos (id de equipo separados por coma)</label>
+    <textarea id="et-equipos" rows="2"></textarea>
+    <button class="btn btn-primario" onclick="guardarEtapa()">Guardar etapa en memoria</button>
+    <span id="et-estado"></span>
+  </div>
+
+  <div class="banderola">Participantes</div>
+  <div class="tarjeta">
+    <div class="aviso">Pega una línea por participante: <code>Nombre; corredor1,corredor2,...,corredor9; equipo1,equipo2,equipo3</code></div>
+    <textarea id="part-texto" rows="6" placeholder="Carlos; EVENEPOEL_REMCO,VINGEGAARD_JONAS,...; SOQ,UAD,VIS"></textarea>
+    <button class="btn btn-secundario" onclick="importarParticipantes()">Importar en memoria</button>
+    <span id="part-estado"></span>
+  </div>
+
+  <div class="banderola">Puntuación (baremo)</div>
+  <div class="tarjeta">
+    <div class="aviso">Valores de partida (placeholder). Sustituye por los definitivos de tu Excel antes de arrancar la competición.</div>
+    <label>Etapa (posición 1..N)</label>
+    <textarea id="bar-etapa" rows="1"></textarea>
+    <label>General</label>
+    <textarea id="bar-general" rows="1"></textarea>
+    <label>Puntos</label>
+    <textarea id="bar-puntos" rows="1"></textarea>
+    <label>Montaña</label>
+    <textarea id="bar-montana" rows="1"></textarea>
+    <label>Equipos</label>
+    <textarea id="bar-equipos" rows="1"></textarea>
+    <button class="btn btn-secundario" onclick="guardarBaremoMemoria()">Guardar baremo en memoria</button>
+    <span id="bar-estado"></span>
+  </div>
+
+  <div class="banderola">Publicar</div>
+  <div class="tarjeta">
+    <p class="mute">Esto sube <code>data.json</code> completo (etapas + resultados + participantes + baremo) al repositorio, sustituyendo el actual.</p>
+    <button class="btn btn-primario" onclick="publicarEnGitHub()">📤 Publicar cambios en GitHub</button>
+    <div id="pub-estado" style="margin-top:8px;"></div>
+  </div>
+
+</main>
+
+<script>
+let DATA = { etapas: [], resultados: {}, participantes: {}, baremo: null };
+
+function cargarConfig() {
+  const cfg = JSON.parse(localStorage.getItem('vuelta_gh_config') || '{}');
+  document.getElementById('cfg-owner').value = cfg.owner || '';
+  document.getElementById('cfg-repo').value = cfg.repo || '';
+  document.getElementById('cfg-branch').value = cfg.branch || 'main';
+  document.getElementById('cfg-token').value = cfg.token || '';
+}
+function guardarConfig() {
+  const cfg = {
+    owner: document.getElementById('cfg-owner').value.trim(),
+    repo: document.getElementById('cfg-repo').value.trim(),
+    branch: document.getElementById('cfg-branch').value.trim() || 'main',
+    token: document.getElementById('cfg-token').value.trim()
+  };
+  localStorage.setItem('vuelta_gh_config', JSON.stringify(cfg));
+  document.getElementById('cfg-estado').innerHTML = '<span class="ok">Guardado ✓</span>';
+}
+
+function parseLista(texto) {
+  return texto.split(',').map(s => s.trim()).filter(Boolean);
+}
+
+function guardarEtapa() {
+  const num = parseInt(document.getElementById('et-numero').value, 10);
+  if (!num) { document.getElementById('et-estado').innerHTML = '<span class="error">Falta el número de etapa</span>'; return; }
+  const etapa = parseLista(document.getElementById('et-etapa').value);
+  const general = parseLista(document.getElementById('et-general').value);
+  const puntos = parseLista(document.getElementById('et-puntos').value);
+  const montana = parseLista(document.getElementById('et-montana').value);
+  const equipos = parseLista(document.getElementById('et-equipos').value);
+
+  const aObjeto = arr => Object.fromEntries(arr.map((id, i) => [i + 1, id]));
+
+  DATA.resultados[num] = {
+    etapa: aObjeto(etapa),
+    general: aObjeto(general),
+    puntos: aObjeto(puntos),
+    montana: aObjeto(montana),
+    equipos: aObjeto(equipos)
+  };
+  document.getElementById('et-estado').innerHTML = `<span class="ok">Etapa ${num} guardada en memoria ✓ (recuerda "Publicar")</span>`;
+}
+
+function importarParticipantes() {
+  const texto = document.getElementById('part-texto').value;
+  const lineas = texto.split('\n').map(l => l.trim()).filter(Boolean);
+  let importados = 0;
+  lineas.forEach(linea => {
+    const partes = linea.split(';').map(p => p.trim());
+    if (partes.length < 3) return;
+    const [nombre, corredoresTxt, equiposTxt] = partes;
+    DATA.participantes[nombre] = {
+      corredores: parseLista(corredoresTxt),
+      equipos: parseLista(equiposTxt)
+    };
+    importados++;
+  });
+  document.getElementById('part-estado').innerHTML = `<span class="ok">${importados} participantes en memoria ✓ (recuerda "Publicar")</span>`;
+}
+
+function guardarBaremoMemoria() {
+  const toArr = id => document.getElementById(id).value.split(',').map(n => parseInt(n.trim(), 10)).filter(n => !isNaN(n));
+  DATA.baremo = {
+    etapa: toArr('bar-etapa'),
+    general: toArr('bar-general'),
+    puntos: toArr('bar-puntos'),
+    montana: toArr('bar-montana'),
+    equipos: toArr('bar-equipos'),
+    bonus_final: (DATA.baremo && DATA.baremo.bonus_final) || undefined
+  };
+  document.getElementById('bar-estado').innerHTML = '<span class="ok">Baremo en memoria ✓ (recuerda "Publicar")</span>';
+}
+
+async function cargarDataActual() {
+  try {
+    const resp = await fetch('data.json?t=' + Date.now());
+    const remoto = await resp.json();
+    DATA = Object.assign(DATA, remoto);
+    // Rellenar campos de baremo si vienen del remoto
+    if (DATA.baremo) {
+      document.getElementById('bar-etapa').value = (DATA.baremo.etapa || []).join(',');
+      document.getElementById('bar-general').value = (DATA.baremo.general || []).join(',');
+      document.getElementById('bar-puntos').value = (DATA.baremo.puntos || []).join(',');
+      document.getElementById('bar-montana').value = (DATA.baremo.montana || []).join(',');
+      document.getElementById('bar-equipos').value = (DATA.baremo.equipos || []).join(',');
+    }
+  } catch (e) {
+    console.warn('No se pudo cargar data.json remoto, se parte de vacío.', e);
+  }
+}
+
+async function publicarEnGitHub() {
+  const cfg = JSON.parse(localStorage.getItem('vuelta_gh_config') || '{}');
+  const estado = document.getElementById('pub-estado');
+  if (!cfg.owner || !cfg.repo || !cfg.token) {
+    estado.innerHTML = '<span class="error">Falta configuración de GitHub (owner/repo/token)</span>';
+    return;
+  }
+  estado.innerHTML = 'Publicando...';
+  try {
+    const path = 'data.json';
+    const apiBase = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${path}`;
+
+    // 1. obtener sha actual
+    const shaResp = await fetch(`${apiBase}?ref=${cfg.branch}`, {
+      headers: { Authorization: `Bearer ${cfg.token}` }
+    });
+    let sha = undefined;
+    if (shaResp.ok) {
+      const shaData = await shaResp.json();
+      sha = shaData.sha;
+    }
+
+    const contenido = JSON.stringify(DATA, null, 2);
+    const contenidoB64 = btoa(unescape(encodeURIComponent(contenido)));
+
+    const putResp = await fetch(apiBase, {
+      method: 'PUT',
+      headers: {
+        Authorization: `Bearer ${cfg.token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: `Actualiza data.json (${new Date().toISOString()})`,
+        content: contenidoB64,
+        branch: cfg.branch,
+        sha
+      })
+    });
+
+    if (!putResp.ok) {
+      const err = await putResp.json();
+      throw new Error(err.message || 'Error desconocido');
+    }
+    estado.innerHTML = '<span class="ok">Publicado correctamente ✓</span>';
+  } catch (e) {
+    estado.innerHTML = `<span class="error">Error: ${e.message}</span>`;
+  }
+}
+
+cargarConfig();
+cargarDataActual();
+</script>
+</body>
+</html>

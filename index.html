@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>LA VUELTA TXIRRIDULARIAK 2026</title>
+<link rel="icon" href="img/logo-vuelta.png">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <img src="img/logo-vuelta.png" alt="La Vuelta" class="logo-vuelta">
+  <div class="titulo-comp">TXIRRIDULARIAK · Porra 2026</div>
+</header>
+
+<main style="padding: 14px 14px 90px;">
+
+  <!-- ================= GENERAL ================= -->
+  <section id="vista-general">
+    <div class="banderola">Clasificación general</div>
+    <div class="tarjeta">
+      <div id="lista-general"><p class="mute centro">Cargando datos...</p></div>
+    </div>
+  </section>
+
+  <!-- ================= ULTIMA ETAPA ================= -->
+  <section id="vista-etapa" class="oculto">
+    <div class="banderola">Última etapa</div>
+    <div class="tarjeta"><div id="lista-etapa"></div></div>
+  </section>
+
+  <!-- ================= REGULARIDAD ================= -->
+  <section id="vista-puntos" class="oculto">
+    <div class="banderola">Regularidad (maillot verde)</div>
+    <div class="tarjeta"><div id="lista-puntos"></div></div>
+  </section>
+
+  <!-- ================= MONTAÑA ================= -->
+  <section id="vista-montana" class="oculto">
+    <div class="banderola">Montaña (maillot de lunares)</div>
+    <div class="tarjeta"><div id="lista-montana"></div></div>
+  </section>
+
+  <!-- ================= ETAPAS (calendario) ================= -->
+  <section id="vista-etapas" class="oculto">
+    <div class="banderola">Etapas</div>
+    <div class="tarjeta"><div id="lista-calendario"></div></div>
+  </section>
+
+  <!-- ================= PARTICIPANTES ================= -->
+  <section id="vista-participantes" class="oculto">
+    <div class="banderola">Participantes</div>
+    <div class="tarjeta"><div id="lista-participantes"></div></div>
+  </section>
+
+</main>
+
+<nav class="nav-inferior">
+  <div class="item activo" data-vista="vista-general"><span class="icono">🔴</span>General</div>
+  <div class="item" data-vista="vista-etapa"><span class="icono">🚴</span>Etapa</div>
+  <div class="item" data-vista="vista-puntos"><span class="icono">🟢</span>Puntos</div>
+  <div class="item" data-vista="vista-montana"><span class="icono">⛰️</span>Montaña</div>
+  <div class="item" data-vista="vista-etapas"><span class="icono">🗺️</span>Etapas</div>
+  <div class="item" data-vista="vista-participantes"><span class="icono">👥</span>Gente</div>
+</nav>
+
+<script src="maestros.js"></script>
+<script src="motor-puntos.js"></script>
+<script>
+const TIPO_ETAPA_ICONO = {
+  crono: "⏱️", ondulada: "〰️", media: "🏔️", montana: "⛰️",
+  llana: "➖", ondulada_final_alto: "〰️⛰️", descanso: "😴"
+};
+const TIPO_ETAPA_TEXTO = {
+  crono: "Contrarreloj", ondulada: "Ondulada", media: "Media montaña",
+  montana: "Montaña", llana: "Llana", ondulada_final_alto: "Ondulada, final en alto",
+  descanso: "Descanso"
+};
+
+let DATA = null;
+
+async function cargarDatos() {
+  try {
+    const resp = await fetch('data.json?t=' + Date.now());
+    DATA = await resp.json();
+  } catch (e) {
+    DATA = { etapas: [], resultados: {}, participantes: {} };
+  }
+  pintarGeneral();
+  pintarCalendario();
+  pintarParticipantes();
+}
+
+function ultimaEtapaJugada() {
+  const nums = Object.keys(DATA.resultados || {}).map(Number).filter(n => !isNaN(n));
+  return nums.length ? Math.max(...nums) : 0;
+}
+
+function pintarGeneral() {
+  const cont = document.getElementById('lista-general');
+  const hastaEtapa = ultimaEtapaJugada();
+  if (!hastaEtapa || !Object.keys(DATA.participantes || {}).length) {
+    cont.innerHTML = '<p class="mute centro">Aún no hay resultados cargados.</p>';
+    return;
+  }
+  const clasi = clasificacionGeneral(DATA, hastaEtapa);
+  const variaciones = posicionesConVariacion(DATA, hastaEtapa);
+  const mapaVar = Object.fromEntries(variaciones.map(v => [v.nombre, v.variacion]));
+
+  cont.innerHTML = clasi.map((p, i) => {
+    const v = mapaVar[p.nombre] || 0;
+    const flecha = v > 0 ? `<span class="flecha-sube">▲${v}</span>`
+                 : v < 0 ? `<span class="flecha-baja">▼${Math.abs(v)}</span>` : '';
+    return `<div class="fila-clasi">
+      <div class="puesto">${i + 1}</div>
+      <div class="nombre-part">${p.nombre} ${flecha}</div>
+      <div class="puntos-part">${p.total}</div>
+    </div>`;
+  }).join('');
+}
+
+function pintarCalendario() {
+  const cont = document.getElementById('lista-calendario');
+  cont.innerHTML = (DATA.etapas || []).map(e => {
+    if (e.descanso) {
+      return `<div class="fila-clasi"><div class="puesto">😴</div><div class="nombre-part mute">${e.recorrido}</div></div>`;
+    }
+    const icono = TIPO_ETAPA_ICONO[e.tipo] || '🚴';
+    const texto = TIPO_ETAPA_TEXTO[e.tipo] || e.tipo;
+    return `<div class="fila-clasi">
+      <div class="puesto">${e.numero}</div>
+      <div class="nombre-part">${e.recorrido}<br><span class="chip-etapa">${icono} ${texto} · ${e.km} km</span></div>
+    </div>`;
+  }).join('');
+}
+
+function pintarParticipantes() {
+  const cont = document.getElementById('lista-participantes');
+  const nombres = Object.keys(DATA.participantes || {});
+  if (!nombres.length) {
+    cont.innerHTML = '<p class="mute centro">Aún no se han cargado participantes.</p>';
+    return;
+  }
+  cont.innerHTML = nombres.sort().map(n => `<div class="fila-clasi"><div class="nombre-part">${n}</div></div>`).join('');
+}
+
+// Navegación inferior
+document.querySelectorAll('.nav-inferior .item').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.nav-inferior .item').forEach(b => b.classList.remove('activo'));
+    document.querySelectorAll('main > section').forEach(s => s.classList.add('oculto'));
+    btn.classList.add('activo');
+    document.getElementById(btn.dataset.vista).classList.remove('oculto');
+  });
+});
+
+cargarDatos();
+</script>
+</body>
+</html>
