@@ -45,7 +45,7 @@ body{
   margin: -24px -20px 26px;
   border-radius: 0 0 20px 20px;
   background:
-    radial-gradient(ellipse 700px 300px at 15% 0%, rgba(255,196,37,.10), transparent 60%),
+    radial-gradient(ellipse 700px 300px at 15% 0%, rgba(197,41,26,.14), transparent 60%),
     #0a0b0c;
   border-bottom: 5px solid var(--rojo);
   box-shadow: var(--sombra);
@@ -67,6 +67,16 @@ body{
   filter: drop-shadow(0 4px 10px rgba(0,0,0,.6));
 }
 .hero .hero-texto{ flex:1; min-width:220px; }
+.franja-espana{
+  height: 6px;
+  margin: 0 0 22px;
+  border-radius: 3px;
+  background: linear-gradient(90deg,
+    #AA151B 0 25%,
+    #F1BF00 25% 75%,
+    #AA151B 75% 100%);
+  box-shadow: var(--sombra);
+}
 .hero .fechas-tour{
   font-family:'Oswald', sans-serif;
   text-transform: uppercase;
