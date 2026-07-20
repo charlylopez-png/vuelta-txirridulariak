@@ -1,31 +1,1027 @@
 {
-  "competicion": "LA VUELTA TXIRRIDULARIAK",
-  "temporada": 2026,
-  "etapas": [
-    { "numero": 1,  "fecha": "2026-08-22", "tipo": "crono",     "recorrido": "Mónaco > Mónaco",                                  "km": 9,     "descanso": false },
-    { "numero": 2,  "fecha": "2026-08-23", "tipo": "ondulada",  "recorrido": "Mónaco > Manosque",                                "km": 215.2, "descanso": false },
-    { "numero": 3,  "fecha": "2026-08-24", "tipo": "media",     "recorrido": "Gruissan - Aude > Font Romeu",                     "km": 166.7, "descanso": false },
-    { "numero": 4,  "fecha": "2026-08-25", "tipo": "montana",   "recorrido": "Andorra la Vella > Andorra la Vella",              "km": 104.9, "descanso": false },
-    { "numero": 5,  "fecha": "2026-08-26", "tipo": "ondulada",  "recorrido": "Falset . Costa Daurada > Roquetes. Terres de l'Ebre", "km": 171.1, "descanso": false },
-    { "numero": 6,  "fecha": "2026-08-27", "tipo": "media",     "recorrido": "Alcossebre > Castelló",                            "km": 176.8, "descanso": false },
-    { "numero": 7,  "fecha": "2026-08-28", "tipo": "montana",   "recorrido": "Vall d'Alba > Aramón Valdelinares",                "km": 149.9, "descanso": false },
-    { "numero": 8,  "fecha": "2026-08-29", "tipo": "llana",     "recorrido": "Puçol > Xeraco",                                   "km": 176.4, "descanso": false },
-    { "numero": 9,  "fecha": "2026-08-30", "tipo": "montana",   "recorrido": "La Vila Joiosa / Villajoyosa > Alto de Aitana. Costa Blanca", "km": 187.5, "descanso": false },
-    { "numero": 0,  "fecha": "2026-08-31", "tipo": "descanso",  "recorrido": "Día de descanso 1",                                "km": 0,     "descanso": true },
-    { "numero": 10, "fecha": "2026-09-01", "tipo": "ondulada",  "recorrido": "Alcaraz > Elche de la Sierra",                     "km": 184.5, "descanso": false },
-    { "numero": 11, "fecha": "2026-09-02", "tipo": "llana",     "recorrido": "Cartagena > Lorca",                                "km": 156.1, "descanso": false },
-    { "numero": 12, "fecha": "2026-09-03", "tipo": "montana",   "recorrido": "Vera > Calar Alto",                                "km": 166.5, "descanso": false },
-    { "numero": 13, "fecha": "2026-09-04", "tipo": "media",     "recorrido": "Almuñécar > Loja",                                 "km": 193.2, "descanso": false },
-    { "numero": 14, "fecha": "2026-09-05", "tipo": "montana",   "recorrido": "Jaén > Sierra de La Pandera",                      "km": 152.7, "descanso": false },
-    { "numero": 15, "fecha": "2026-09-06", "tipo": "media",     "recorrido": "Palma del Río > Córdoba",                          "km": 181.2, "descanso": false },
-    { "numero": 0,  "fecha": "2026-09-07", "tipo": "descanso",  "recorrido": "Día de descanso 2",                                "km": 0,     "descanso": true },
-    { "numero": 16, "fecha": "2026-09-08", "tipo": "ondulada",  "recorrido": "Cortegana > La Rábida. Palos de la Frontera",      "km": 186,   "descanso": false },
-    { "numero": 17, "fecha": "2026-09-09", "tipo": "llana",     "recorrido": "Dos Hermanas > Sevilla",                           "km": 189.2, "descanso": false },
-    { "numero": 18, "fecha": "2026-09-10", "tipo": "crono",     "recorrido": "El Puerto de Santa María > Jerez de la Frontera",  "km": 32.5,  "descanso": false },
-    { "numero": 19, "fecha": "2026-09-11", "tipo": "ondulada_final_alto", "recorrido": "Vélez-Málaga > Peñas Blancas. Estepona", "km": 205.1, "descanso": false },
-    { "numero": 20, "fecha": "2026-09-12", "tipo": "montana",   "recorrido": "La Calahorra > Collado del Alguacil",              "km": 187,   "descanso": false },
-    { "numero": 21, "fecha": "2026-09-13", "tipo": "llana",     "recorrido": "Carrefour Granada > Granada",                      "km": 99.4,  "descanso": false }
+  "participantes": [
+    {
+      "id": "p-titus-1-17830982178660",
+      "nombre": "Titus 1",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "TOM PIDCOCK",
+        "PHILIPSEN",
+        "DE LIE",
+        "ZIMMERMANN",
+        "ABRAHAMSEN",
+        "AZPARREN",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-titus-2-17830982178671",
+      "nombre": "Titus 2",
+      "corredores": [
+        "POGACAR",
+        "DEL TORO",
+        "SKJELMOSE",
+        "UIJTDEBROEKS",
+        "MERLIER",
+        "ACKERMANN",
+        "ABRAHAMSEN",
+        "AZPARREN",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "DECATHLON",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-carlos-wt-17830983428390",
+      "nombre": "Carlos WT",
+      "corredores": [
+        "POGACAR",
+        "SEIXAS",
+        "PHILIPSEN",
+        "DEL TORO",
+        "VAN EETVELT",
+        "SEAN QUINN",
+        "ABRAHAMSEN",
+        "TRATNIK",
+        "SKUJINS"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-castorama-17831448889040",
+      "nombre": "Castorama",
+      "corredores": [
+        "POGACAR",
+        "PHILIPSEN",
+        "DORIAN GODON",
+        "VINGEGAARD",
+        "TOM PIDCOCK",
+        "MAX KANTER",
+        "VELASCO",
+        "CORT NIELSEN",
+        "J F PARRA"
+      ],
+      "equipos": [
+        "RED BULL",
+        "UAE",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-txiki-17831451039490",
+      "nombre": "Txiki",
+      "corredores": [
+        "POGACAR",
+        "SEAN QUINN",
+        "MERLIER",
+        "DEL TORO",
+        "SEIXAS",
+        "OLIVEIRA",
+        "TURGIS",
+        "MAX KANTER",
+        "PLANCKAERT"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "VISMA"
+      ]
+    },
+    {
+      "id": "p-postobon-17831451039491",
+      "nombre": "Postobon",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "GANNA",
+        "DEL TORO",
+        "MATTHEWS",
+        "DE LIE",
+        "MAX KANTER",
+        "VERONA",
+        "SKUJINS"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-maik-17831451039502",
+      "nombre": "Maik",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "DEL TORO",
+        "LIPOWITZ",
+        "DEBRUYNE",
+        "MAX KANTER",
+        "ABRAHAMSEN",
+        "ASKEY",
+        "CHARMIG"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-totxi-17831553853640",
+      "nombre": "Totxi",
+      "corredores": [
+        "POGACAR",
+        "DEL TORO",
+        "VINGEGAARD",
+        "PHILIPSEN",
+        "ABRAHAMSEN",
+        "MAX KANTER",
+        "LOUVEL",
+        "GATE",
+        "EENKHOORN"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-marijaia-17831553853641",
+      "nombre": "Marijaia",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "PHILIPSEN",
+        "JORDAN JEGAT",
+        "FRIGO",
+        "LENNY MTNZ",
+        "GANNA",
+        "SCHMID",
+        "BARGUIL"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "VISMA"
+      ]
+    },
+    {
+      "id": "p-mentxu-17831553853652",
+      "nombre": "Mentxu",
+      "corredores": [
+        "POGACAR",
+        "PHILIPSEN",
+        "TEJADA",
+        "DEL TORO",
+        "V PARET PEINTRE",
+        "AFFINI",
+        "CARAPAZ",
+        "POLITT",
+        "MATTHEWS"
+      ],
+      "equipos": [
+        "INEOS",
+        "UAE",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-onabas-17831553853653",
+      "nombre": "Jonabas",
+      "corredores": [
+        "POGACAR",
+        "SEIXAS",
+        "DEL TORO",
+        "LIPOWITZ",
+        "FRETIN",
+        "MAX KANTER",
+        "ABRAHAMSEN",
+        "J F PARRA",
+        "CRAPS"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-aros-17831553853654",
+      "nombre": "Aros",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "MERLIER",
+        "TOM PIDCOCK",
+        "SIMMONS",
+        "CASTRILLO",
+        "BALDERSTONE",
+        "IZAGUIRRE",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-abaztu-17831553853655",
+      "nombre": "Abaztu",
+      "corredores": [
+        "POGACAR",
+        "LIPOWITZ",
+        "DEL TORO",
+        "PEDERSEN",
+        "UIJTDEBROEKS",
+        "MAX KANTER",
+        "DEBRUYNE",
+        "ABRAHAMSEN",
+        "OTRUBA"
+      ],
+      "equipos": [
+        "VISMA",
+        "UAE",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-patxi-izaguirre-17831557926930",
+      "nombre": "Patxi Izaguirre",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "SEIXAS",
+        "DORIAN GODON",
+        "FRETIN",
+        "MOHORIC",
+        "STUYVEN",
+        "ANDERS JOHANNESSEN",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-casartelli-im-17831557926941",
+      "nombre": "Casartelli IM",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "TOM PIDCOCK",
+        "LENNY MTNZ",
+        "V PARET PEINTRE",
+        "BEN HEALY",
+        "ABRAHAMSEN",
+        "MAX KANTER",
+        "STEWART"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-xabi-17831581639000",
+      "nombre": "Xabi",
+      "corredores": [
+        "POGACAR",
+        "SEIXAS",
+        "DEL TORO",
+        "PHILIPSEN",
+        "MAX KANTER",
+        "CATTANEO",
+        "VAN DIJKE",
+        "CEPEDA",
+        "JAVIER ROMO"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "VISMA"
+      ]
+    },
+    {
+      "id": "p-jca-17831744985150",
+      "nombre": "JCA",
+      "corredores": [
+        "POGACAR",
+        "SEIXAS",
+        "LIPOWITZ",
+        "PHILIPSEN",
+        "GANNA",
+        "TURGIS",
+        "ABRAHAMSEN",
+        "MAX KANTER",
+        "SKUJINS"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-pogacar-17831744985151",
+      "nombre": "Pogacar",
+      "corredores": [
+        "POGACAR",
+        "LIPOWITZ",
+        "PHILIPSEN",
+        "TOBIAS JOHANNESSEN",
+        "TOM PIDCOCK",
+        "FRETIN",
+        "DE KLEIJN",
+        "MAX KANTER",
+        "ABRAHAMSEN"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "VISMA"
+      ]
+    },
+    {
+      "id": "p-ibon-izaguirre-17831744985162",
+      "nombre": "Ibon Izaguirre",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "EVENEPOEL",
+        "TOM PIDCOCK",
+        "MATTHEWS",
+        "STUYVEN",
+        "IZAGUIRRE",
+        "MAX KANTER",
+        "ABRAHAMSEN"
+      ],
+      "equipos": [
+        "UAE",
+        "LIDL-TREK",
+        "VISMA"
+      ]
+    },
+    {
+      "id": "p-endurance-17831744985163",
+      "nombre": "Endurance",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "EVENEPOEL",
+        "LENNY MTNZ",
+        "TEJADA",
+        "JORDAN JEGAT",
+        "BERWICK",
+        "MAX KANTER",
+        "ANDERS JOHANNESSEN"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-mmga-17831744985164",
+      "nombre": "MMGA",
+      "corredores": [
+        "POGACAR",
+        "PHILIPSEN",
+        "SEIXAS",
+        "CARAPAZ",
+        "VAN EETVELT",
+        "ACKERMANN",
+        "CHRIS HARPER",
+        "SEAN QUINN",
+        "ANDERS JOHANNESSEN"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-katxiporreta-17831744985165",
+      "nombre": "Katxiporreta",
+      "corredores": [
+        "POGACAR",
+        "TEJADA",
+        "TOBIAS JOHANNESSEN",
+        "VAN DER POEL",
+        "MERLIER",
+        "LENNY MTNZ",
+        "JORDAN JEGAT",
+        "CHRIS HARPER",
+        "BERWICK"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-minimarti-17831744985166",
+      "nombre": "Minimarti",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "PHILIPSEN",
+        "GANNA",
+        "VAN DER POEL",
+        "CEPEDA",
+        "TARLING",
+        "MAX KANTER",
+        "BIERMANS"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-manolo-17831744985167",
+      "nombre": "Manolo",
+      "corredores": [
+        "POGACAR",
+        "EVENEPOEL",
+        "AYUSO",
+        "DORIAN GODON",
+        "WAERENSKJOLD",
+        "RICCITELLO",
+        "JORDAN JEGAT",
+        "BALDERSTONE",
+        "BERWICK"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-arabako-17831744985168",
+      "nombre": "Arabako",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "PHILIPSEN",
+        "MERLIER",
+        "MAX KANTER",
+        "ABRAHAMSEN",
+        "ACKERMANN",
+        "J F PARRA",
+        "POLITT"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-ikas-17831744985169",
+      "nombre": "Ikas",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "EVENEPOEL",
+        "TOM PIDCOCK",
+        "DORIAN GODON",
+        "BRAZ AFONSO",
+        "MAX KANTER",
+        "VERCHER",
+        "BERCKMOES"
+      ],
+      "equipos": [
+        "UAE",
+        "INEOS",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-imanol-178317449851610",
+      "nombre": "Imanol",
+      "corredores": [
+        "POGACAR",
+        "PHILIPSEN",
+        "LIPOWITZ",
+        "TOBIAS JOHANNESSEN",
+        "TOM PIDCOCK",
+        "CARUSO",
+        "VAN EETVELT",
+        "ABRAHAMSEN",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-aupa-jon--178317449851711",
+      "nombre": "Aupa Jon!",
+      "corredores": [
+        "POGACAR",
+        "LIPOWITZ",
+        "PHILIPSEN",
+        "CARAPAZ",
+        "TOM PIDCOCK",
+        "CARUSO",
+        "JORDAN JEGAT",
+        "IZAGUIRRE",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-cote-de-pike-178317449851712",
+      "nombre": "Cote de Pike",
+      "corredores": [
+        "VINGEGAARD",
+        "SEIXAS",
+        "EVENEPOEL",
+        "PEDERSEN",
+        "VAN DER POEL",
+        "GANNA",
+        "J F PARRA",
+        "BARGUIL",
+        "AZPARREN"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-juanjo-178317449851713",
+      "nombre": "Juanjo",
+      "corredores": [
+        "POGACAR",
+        "SEIXAS",
+        "LIPOWITZ",
+        "MERLIER",
+        "JORDAN JEGAT",
+        "IZAGUIRRE",
+        "FRIGO",
+        "BALDERSTONE",
+        "VEISTROFFER"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "DECATHLON"
+      ]
+    },
+    {
+      "id": "p-la-lejana-178317449851714",
+      "nombre": "La Lejana",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "MERLIER",
+        "LENNY MTNZ",
+        "TOM PIDCOCK",
+        "STEWART",
+        "MAX KANTER",
+        "J F PARRA",
+        "AZPARREN"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-jordi-quixano-178317449851715",
+      "nombre": "Jordi Quixano",
+      "corredores": [
+        "POGACAR",
+        "SEIXAS",
+        "V PARET PEINTRE",
+        "LENNY MTNZ",
+        "G MARTIN",
+        "KOOIJ",
+        "MAX KANTER",
+        "ABRAHAMSEN",
+        "JORDAN JEGAT"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-maeztu-178317449851716",
+      "nombre": "Maeztu",
+      "corredores": [
+        "VINGEGAARD",
+        "SEIXAS",
+        "DEL TORO",
+        "LIPOWITZ",
+        "PHILIPSEN",
+        "MAX KANTER",
+        "ABRAHAMSEN",
+        "OLDANI",
+        "J F PARRA"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-alex-loidi-178317449851717",
+      "nombre": "Alex Loidi",
+      "corredores": [
+        "POGACAR",
+        "AYUSO",
+        "DEL TORO",
+        "MERLIER",
+        "ACKERMANN",
+        "IZAGUIRRE",
+        "RAÚL G PIERNA",
+        "VERONA",
+        "MEURISSE"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-seixas-178317449851718",
+      "nombre": "Seixas",
+      "corredores": [
+        "VINGEGAARD",
+        "SEIXAS",
+        "DEL TORO",
+        "PHILIPSEN",
+        "TOM PIDCOCK",
+        "FRETIN",
+        "DE KLEIJN",
+        "ABRAHAMSEN",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-lolo-1-178317449851719",
+      "nombre": "Lolo 1",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "PHILIPSEN",
+        "TOBIAS JOHANNESSEN",
+        "RICCITELLO",
+        "JORDAN JEGAT",
+        "J F PARRA",
+        "ABRAHAMSEN",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-lolo-2-178317449851720",
+      "nombre": "lolo 2",
+      "corredores": [
+        "VINGEGAARD",
+        "SEIXAS",
+        "DEL TORO",
+        "LIPOWITZ",
+        "TOM PIDCOCK",
+        "VAN EETVELT",
+        "ACKERMANN",
+        "MAX KANTER",
+        "ABRAHAMSEN"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-jone-parayuelo-178317449851821",
+      "nombre": "Jone Parayuelo",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "LIPOWITZ",
+        "PHILIPSEN",
+        "JORDAN JEGAT",
+        "BERWICK",
+        "J F PARRA",
+        "MAX KANTER",
+        "BERCKMOES"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-markelinho-178317449851822",
+      "nombre": "Markelinho",
+      "corredores": [
+        "POGACAR",
+        "AYUSO",
+        "PHILIPSEN",
+        "BEN HEALY",
+        "DORIAN GODON",
+        "R GREGOIRE",
+        "RICCITELLO",
+        "ABRAHAMSEN",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "LIDL-TREK"
+      ]
+    },
+    {
+      "id": "p-kalitrontxo-178317449851823",
+      "nombre": "Kalitrontxo",
+      "corredores": [
+        "POGACAR",
+        "VINGEGAARD",
+        "SEIXAS",
+        "UIJTDEBROEKS",
+        "GANNA",
+        "ASKEY",
+        "J F PARRA",
+        "MAX KANTER",
+        "BRAZ AFONSO"
+      ],
+      "equipos": [
+        "UAE",
+        "INEOS",
+        "RED BULL"
+      ]
+    },
+    {
+      "id": "p-espimarti-17831846561070",
+      "nombre": "Espimarti",
+      "corredores": [
+        "POGACAR",
+        "TOBIAS JOHANNESSEN",
+        "VINGEGAARD",
+        "MERLIER",
+        "J F PARRA",
+        "R GREGOIRE",
+        "JORDAN JEGAT",
+        "ABRAHAMSEN",
+        "MAX KANTER"
+      ],
+      "equipos": [
+        "UAE",
+        "RED BULL",
+        "VISMA"
+      ]
+    }
   ],
-  "resultados": {},
-  "participantes": {}
+  "resultados": [],
+  "bonusFinal": null,
+  "calendario": [
+    {
+      "numero": 1,
+      "tipo": "contrarreloj_individual",
+      "fecha": "2026-08-22",
+      "dia": "Sáb",
+      "salida": "Mónaco",
+      "meta": "Mónaco",
+      "km": 9
+    },
+    {
+      "numero": 2,
+      "tipo": "ondulada",
+      "fecha": "2026-08-23",
+      "dia": "Dom",
+      "salida": "Mónaco",
+      "meta": "Manosque",
+      "km": 215.2
+    },
+    {
+      "numero": 3,
+      "tipo": "media",
+      "fecha": "2026-08-24",
+      "dia": "Lun",
+      "salida": "Gruissan - Aude",
+      "meta": "Font Romeu",
+      "km": 166.7
+    },
+    {
+      "numero": 4,
+      "tipo": "montana",
+      "fecha": "2026-08-25",
+      "dia": "Mar",
+      "salida": "Andorra la Vella",
+      "meta": "Andorra la Vella",
+      "km": 104.9
+    },
+    {
+      "numero": 5,
+      "tipo": "ondulada",
+      "fecha": "2026-08-26",
+      "dia": "Mié",
+      "salida": "Falset . Costa Daurada",
+      "meta": "Roquetes. Terres de l'Ebre",
+      "km": 171.1
+    },
+    {
+      "numero": 6,
+      "tipo": "media",
+      "fecha": "2026-08-27",
+      "dia": "Jue",
+      "salida": "Alcossebre",
+      "meta": "Castelló",
+      "km": 176.8
+    },
+    {
+      "numero": 7,
+      "tipo": "montana",
+      "fecha": "2026-08-28",
+      "dia": "Vie",
+      "salida": "Vall d'Alba",
+      "meta": "Aramón Valdelinares",
+      "km": 149.9
+    },
+    {
+      "numero": 8,
+      "tipo": "llana",
+      "fecha": "2026-08-29",
+      "dia": "Sáb",
+      "salida": "Puçol",
+      "meta": "Xeraco",
+      "km": 176.4
+    },
+    {
+      "numero": 9,
+      "tipo": "montana",
+      "fecha": "2026-08-30",
+      "dia": "Dom",
+      "salida": "La Vila Joiosa / Villajoyosa",
+      "meta": "Alto de Aitana. Costa Blanca",
+      "km": 187.5
+    },
+    {
+      "numero": 10,
+      "tipo": "ondulada",
+      "fecha": "2026-09-01",
+      "dia": "Mar",
+      "salida": "Alcaraz",
+      "meta": "Elche de la Sierra",
+      "km": 184.5
+    },
+    {
+      "numero": 11,
+      "tipo": "llana",
+      "fecha": "2026-09-02",
+      "dia": "Mié",
+      "salida": "Cartagena",
+      "meta": "Lorca",
+      "km": 156.1
+    },
+    {
+      "numero": 12,
+      "tipo": "montana",
+      "fecha": "2026-09-03",
+      "dia": "Jue",
+      "salida": "Vera",
+      "meta": "Calar Alto",
+      "km": 166.5
+    },
+    {
+      "numero": 13,
+      "tipo": "media",
+      "fecha": "2026-09-04",
+      "dia": "Vie",
+      "salida": "Almuñécar",
+      "meta": "Loja",
+      "km": 193.2
+    },
+    {
+      "numero": 14,
+      "tipo": "montana",
+      "fecha": "2026-09-05",
+      "dia": "Sáb",
+      "salida": "Jaén",
+      "meta": "Sierra de La Pandera",
+      "km": 152.7
+    },
+    {
+      "numero": 15,
+      "tipo": "media",
+      "fecha": "2026-09-06",
+      "dia": "Dom",
+      "salida": "Palma del Río",
+      "meta": "Córdoba",
+      "km": 181.2
+    },
+    {
+      "numero": 16,
+      "tipo": "ondulada",
+      "fecha": "2026-09-08",
+      "dia": "Mar",
+      "salida": "Cortegana",
+      "meta": "La Rábida. Palos de la Frontera",
+      "km": 186
+    },
+    {
+      "numero": 17,
+      "tipo": "llana",
+      "fecha": "2026-09-09",
+      "dia": "Mié",
+      "salida": "Dos Hermanas",
+      "meta": "Sevilla",
+      "km": 189.2
+    },
+    {
+      "numero": 18,
+      "tipo": "contrarreloj_individual",
+      "fecha": "2026-09-10",
+      "dia": "Jue",
+      "salida": "El Puerto de Santa María",
+      "meta": "Jerez de la Frontera",
+      "km": 32.5
+    },
+    {
+      "numero": 19,
+      "tipo": "ondulada_final_alto",
+      "fecha": "2026-09-11",
+      "dia": "Vie",
+      "salida": "Vélez-Málaga",
+      "meta": "Peñas Blancas. Estepona",
+      "km": 205.1
+    },
+    {
+      "numero": 20,
+      "tipo": "montana",
+      "fecha": "2026-09-12",
+      "dia": "Sáb",
+      "salida": "La Calahorra",
+      "meta": "Collado del Alguacil",
+      "km": 187
+    },
+    {
+      "numero": 21,
+      "tipo": "llana",
+      "fecha": "2026-09-13",
+      "dia": "Dom",
+      "salida": "Carrefour Granada",
+      "meta": "Granada",
+      "km": 99.4
+    }
+  ],
+  "descansos": [
+    {
+      "fecha": "2026-08-31",
+      "lugar": "Costa Blanca (Alicante)"
+    },
+    {
+      "fecha": "2026-09-07",
+      "lugar": "Córdoba"
+    }
+  ]
 }
