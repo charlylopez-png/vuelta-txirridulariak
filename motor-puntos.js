@@ -290,11 +290,18 @@ function puntosPorCategoriaParticipante(participante, datos){
 
 // Devuelve los ids de los participantes que lideran cada "maillot" del grupo
 // (empates: se incluyen todos los que compartan el máximo).
+// El rojo va para el líder de la clasificación TOTAL combinada (como en la
+// carrera real: el maillot rojo lo lleva el líder de la general, no quien más
+// puntos suma solo en la sub-categoría "General"). Verde y lunares sí siguen
+// siendo por sub-categoría, igual que las clasificaciones de puntos y montaña
+// reales van aparte de la general.
 function calcularLideresJersey(datos){
   const porParticipante = (datos.participantes || []).map(p => ({
     id: p.id,
     ...puntosPorCategoriaParticipante(p, datos)
   }));
+
+  const clasificacionTotal = calcularClasificacion(datos);
 
   function lideres(campo){
     if(!porParticipante.length) return [];
@@ -303,8 +310,15 @@ function calcularLideresJersey(datos){
     return porParticipante.filter(p => p[campo] === max).map(p => p.id);
   }
 
+  function lideresTotal(){
+    if(!clasificacionTotal.length) return [];
+    const max = Math.max(...clasificacionTotal.map(p => p.total));
+    if(max <= 0) return [];
+    return clasificacionTotal.filter(p => p.total === max).map(p => p.id);
+  }
+
   return {
-    general: lideres('general'),
+    general: lideresTotal(),
     regularidad: lideres('regularidad'),
     montana: lideres('montana'),
   };
