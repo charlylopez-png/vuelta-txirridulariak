@@ -720,7 +720,52 @@
       ]
     }
   ],
-  "resultados": [],
+  "resultados": [
+    {
+      "numero": 1,
+      "nombre": "Mónaco → Mónaco",
+      "etapa": [
+        "POGACAR",
+        "HAYTER",
+        "TARLING",
+        "THORNLEY",
+        "LAPORTE",
+        "BISIAUX",
+        "CHAMBERLAIN",
+        "VAN AERT",
+        "FISHER-BLACK",
+        "KLUCKERS"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "POGACAR",
+        "HAYTER",
+        "TARLING",
+        "THORNLEY",
+        "LAPORTE",
+        "BISIAUX",
+        "CHAMBERLAIN",
+        "VAN AERT",
+        "FISHER-BLACK",
+        "KLUCKERS"
+      ],
+      "puntos": [
+        "POGACAR",
+        "HAYTER",
+        "TARLING",
+        "THORNLEY",
+        "LAPORTE"
+      ],
+      "montana": [],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "DECATHLON",
+        "RED BULL",
+        "INEOS"
+      ]
+    }
+  ],
   "bonusFinal": null,
   "calendario": [
     {
