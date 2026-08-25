@@ -764,6 +764,55 @@
         "RED BULL",
         "INEOS"
       ]
+    },
+    {
+      "numero": 2,
+      "nombre": "Mónaco → Manosque",
+      "etapa": [
+        "BRENNAN",
+        "MIQUEL",
+        "POGACAR",
+        "PEDERSEN",
+        "HOFSTETTER",
+        "JOHANNESSEN",
+        "FISHER-BLACK",
+        "LAURANCE",
+        "ONLEY",
+        "AULAR"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "POGACAR",
+        "VAN AERT",
+        "BRENNAN",
+        "BISIAUX",
+        "FISHER-BLACK",
+        "KUNG",
+        "VINE",
+        "PEDERSEN",
+        "ROGLIC",
+        "LABROSSE"
+      ],
+      "puntos": [
+        "POGACAR",
+        "HAYTER",
+        "BRENNAN",
+        "VAN AERT",
+        "MIQUEL"
+      ],
+      "montana": [
+        "BOUWMAN",
+        "URIARTE",
+        "HAYTER",
+        "FERNANDEZ"
+      ],
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "INEOS",
+        "DECATHLON",
+        "TUDOR"
+      ]
     }
   ],
   "bonusFinal": null,
