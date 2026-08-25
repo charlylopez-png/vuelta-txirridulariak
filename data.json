@@ -813,6 +813,56 @@
         "DECATHLON",
         "TUDOR"
       ]
+    },
+    {
+      "numero": 4,
+      "nombre": "Andorra la Vella → Andorra la Vella",
+      "etapa": [
+        "POGACAR",
+        "WIDAR",
+        "GALL",
+        "ONLEY",
+        "KUSS",
+        "MAS",
+        "ROGLIC",
+        "CARAPAZ",
+        "SKJELMOSE",
+        "MUHLBERGER"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "POGACAR",
+        "ROGLIC",
+        "MAS",
+        "KUSS",
+        "ONLEY",
+        "CARAPAZ",
+        "GALL",
+        "SKJELMOSE",
+        "WIDAR",
+        "VINE"
+      ],
+      "puntos": [
+        "POGACAR",
+        "HAYTER",
+        "BRENNAN",
+        "BISIAUX",
+        "MIQUEL"
+      ],
+      "montana": [
+        "POGACAR",
+        "FORTUNATO",
+        "BOUWMAN",
+        "KUSS",
+        "CARAPAZ"
+      ],
+      "equipos": [
+        "UAE",
+        "DECATHLON",
+        "VISMA",
+        "INEOS",
+        "XDS ASTANA"
+      ]
     }
   ],
   "bonusFinal": null,
