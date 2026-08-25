@@ -737,10 +737,33 @@
         "KLUCKERS"
       ],
       "etapaEquipos": [],
-      "general": [],
-      "puntos": [],
+      "general": [
+        "POGACAR",
+        "HAYTER",
+        "TARLING",
+        "THORNLEY",
+        "LAPORTE",
+        "BISIAUX",
+        "CHAMBERLAIN",
+        "VAN AERT",
+        "FISHER-BLACK",
+        "KLUCKERS"
+      ],
+      "puntos": [
+        "POGACAR",
+        "HAYTER",
+        "TARLING",
+        "THORNLEY",
+        "LAPORTE"
+      ],
       "montana": [],
-      "equipos": []
+      "equipos": [
+        "UAE",
+        "VISMA",
+        "DECATHLON",
+        "RED BULL",
+        "INEOS"
+      ]
     },
     {
       "numero": 2,
