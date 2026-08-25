@@ -1,4 +1,4 @@
-# LA VUELTA TXIRRIDULARIAK 2026
+# LA VUELTA TXIRRINDULARIAK 2026
 
 App de porra fantasy para La Vuelta a España 2026 (22 ago – 13 sep, 21 etapas).
 
