@@ -349,6 +349,8 @@ footer.pie{
 .fila-etapa .estado.hoy{ color: var(--rojo); font-weight:700; }
 .fila-etapa .estado.hecha{ color: var(--verde); }
 .fila-etapa .estado.futura{ color: var(--texto-tenue); }
+.fila-etapa .estado.anulada{ color: var(--texto-tenue); text-decoration: line-through; }
+.fila-etapa.es-anulada{ opacity: .55; }
 .fila-descanso{
   text-align:center;
   font-family:'Oswald', sans-serif;

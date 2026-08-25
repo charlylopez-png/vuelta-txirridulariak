@@ -865,8 +865,9 @@ function pintarCalendario(){
     if(esHoy){ claseEstado='hoy'; textoEstado='Hoy'; }
     else if(completada){ claseEstado='hecha'; textoEstado='Completada'; }
     else if(e.fecha < hoyISO){ claseEstado='hecha'; textoEstado='Disputada'; }
+    if(e.anulada){ claseEstado='anulada'; textoEstado='Anulada'; }
 
-    html += `<div class="fila-etapa ${esHoy?'es-hoy':''} ${completada?'completada':''}" onclick="irAEtapa(${e.numero})">
+    html += `<div class="fila-etapa ${esHoy?'es-hoy':''} ${completada?'completada':''} ${e.anulada?'es-anulada':''}" onclick="irAEtapa(${e.numero})">
       <div class="num-etapa">${e.numero}</div>
       <div class="icono-tipo" title="Ver perfil oficial" onclick="event.stopPropagation(); mostrarPerfilEtapa(${e.numero}, '${e.salida.replace(/'/g,"\\'")} → ${e.meta.replace(/'/g,"\\'")}')">${ICONO_TIPO[e.tipo]||'🚴'}</div>
       <div class="ruta">${e.salida} → ${e.meta}<span class="fecha">${e.dia} ${formateaFecha(e.fecha)} · ${NOMBRE_TIPO[e.tipo]||''}</span></div>

@@ -720,101 +720,7 @@
       ]
     }
   ],
-  "resultados": [
-    {
-      "numero": 1,
-      "nombre": "Mónaco → Mónaco",
-      "etapa": [
-        "POGACAR",
-        "HAYTER",
-        "TARLING",
-        "THORNLEY",
-        "LAPORTE",
-        "BISIAUX",
-        "CHAMBERLAIN",
-        "VAN AERT",
-        "FISHER-BLACK",
-        "KLUCKERS"
-      ],
-      "etapaEquipos": [],
-      "general": [
-        "POGACAR",
-        "HAYTER",
-        "TARLING",
-        "THORNLEY",
-        "LAPORTE",
-        "BISIAUX",
-        "CHAMBERLAIN",
-        "VAN AERT",
-        "FISHER-BLACK",
-        "KLUCKERS"
-      ],
-      "puntos": [
-        "POGACAR",
-        "HAYTER",
-        "TARLING",
-        "THORNLEY",
-        "LAPORTE"
-      ],
-      "montana": [],
-      "equipos": [
-        "UAE",
-        "VISMA",
-        "DECATHLON",
-        "RED BULL",
-        "INEOS"
-      ]
-    },
-    {
-      "numero": 2,
-      "nombre": "Mónaco → Manosque",
-      "etapa": [
-        "BRENNAN",
-        "MIQUEL",
-        "POGACAR",
-        "PEDERSEN",
-        "HOFSTETTER",
-        "JOHANNESSEN",
-        "FISHER-BLACK",
-        "LAURANCE",
-        "ONLEY",
-        "AULAR"
-      ],
-      "etapaEquipos": [],
-      "general": [
-        "POGACAR",
-        "VAN AERT",
-        "BRENNAN",
-        "BISIAUX",
-        "FISHER-BLACK",
-        "KUNG",
-        "VINE",
-        "PEDERSEN",
-        "ROGLIC",
-        "LABROSSE"
-      ],
-      "puntos": [
-        "POGACAR",
-        "HAYTER",
-        "BRENNAN",
-        "VAN AERT",
-        "MIQUEL"
-      ],
-      "montana": [
-        "BOUWMAN",
-        "URIARTE",
-        "HAYTER",
-        "FERNANDEZ"
-      ],
-      "equipos": [
-        "UAE",
-        "VISMA",
-        "INEOS",
-        "DECATHLON",
-        "TUDOR"
-      ]
-    }
-  ],
+  "resultados": [],
   "bonusFinal": null,
   "calendario": [
     {
@@ -842,7 +748,8 @@
       "dia": "Lun",
       "salida": "Gruissan - Aude",
       "meta": "Font Romeu",
-      "km": 174
+      "km": 174,
+      "anulada": true
     },
     {
       "numero": 4,
