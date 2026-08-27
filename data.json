@@ -863,6 +863,56 @@
         "INEOS",
         "XDS ASTANA"
       ]
+    },
+    {
+      "numero": 5,
+      "nombre": "Falset . Costa Daurada → Roquetes. Terres de l'Ebre",
+      "etapa": [
+        "BRENNAN",
+        "MEEUS",
+        "ALBANESE",
+        "ROMELE",
+        "LAURANCE",
+        "LAPORTE",
+        "DAINESE",
+        "BRAET",
+        "GONZALEZ",
+        "VAN AERT"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "POGACAR",
+        "ROGLIC",
+        "MAS",
+        "KUSS",
+        "ONLEY",
+        "CARAPAZ",
+        "GALL",
+        "SKJELMOSE",
+        "WIDAR",
+        "VINE"
+      ],
+      "puntos": [
+        "POGACAR",
+        "BRENNAN",
+        "HAYTER",
+        "LAPORTE",
+        "VAN AERT"
+      ],
+      "montana": [
+        "POGACAR",
+        "FORTUNATO",
+        "BOUWMAN",
+        "KUSS",
+        "CARAPAZ"
+      ],
+      "equipos": [
+        "UAE",
+        "DECATHLON",
+        "VISMA",
+        "INEOS",
+        "XDS ASTANA"
+      ]
     }
   ],
   "bonusFinal": null,
