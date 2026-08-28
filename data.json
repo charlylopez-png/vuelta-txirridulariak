@@ -913,6 +913,56 @@
         "INEOS",
         "XDS ASTANA"
       ]
+    },
+    {
+      "numero": 6,
+      "nombre": "Alcossebre → Castelló",
+      "etapa": [
+        "POGACAR",
+        "MAS",
+        "DEBRUYNE",
+        "CARAPAZ",
+        "TEJADA",
+        "GALL",
+        "ROGLIC",
+        "CRISTIAN RODRIGUEZ",
+        "BERTHET",
+        "SKJELMOSE"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "POGACAR",
+        "MAS",
+        "ROGLIC",
+        "CARAPAZ",
+        "GALL",
+        "KUSS",
+        "ONLEY",
+        "DEBRUYNE",
+        "SKJELMOSE",
+        "TEJADA"
+      ],
+      "puntos": [
+        "POGACAR",
+        "VAN AERT",
+        "BRENNAN",
+        "HAYTER",
+        "LAPORTE"
+      ],
+      "montana": [
+        "POGACAR",
+        "MAS",
+        "FORTUNATO",
+        "BUITRAGO",
+        "GALL"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "UAE",
+        "INEOS",
+        "VISMA",
+        "XDS ASTANA"
+      ]
     }
   ],
   "bonusFinal": null,
