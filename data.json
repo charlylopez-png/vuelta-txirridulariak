@@ -963,6 +963,56 @@
         "VISMA",
         "XDS ASTANA"
       ]
+    },
+    {
+      "numero": 7,
+      "nombre": "Vall d'Alba → Aramón Valdelinares",
+      "etapa": [
+        "LEKNESSUND",
+        "JOHANNESSEN",
+        "VAN AERT",
+        "OMRZEL",
+        "JUAN FELIPE RODRIGUEZ",
+        "SOSA",
+        "LUTSENKO",
+        "DUNBAR",
+        "BISIAUX",
+        "GARCIA PIERNA"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "POGACAR",
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "KUSS",
+        "ONLEY",
+        "CARAPAZ",
+        "SKJELMOSE",
+        "TEJADA",
+        "MUHLBERGER"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "POGACAR",
+        "BRENNAN",
+        "HAYTER",
+        "LAPORTE"
+      ],
+      "montana": [
+        "POGACAR",
+        "LEKNESSUND",
+        "MAS",
+        "FORTUNATO",
+        "VAN AERT"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "UAE",
+        "VISMA",
+        "INEOS",
+        "XDS ASTANA"
+      ]
     }
   ],
   "bonusFinal": null,
