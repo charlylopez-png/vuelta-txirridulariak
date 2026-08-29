@@ -1013,6 +1013,56 @@
         "INEOS",
         "XDS ASTANA"
       ]
+    },
+    {
+      "numero": 8,
+      "nombre": "Puçol → Xeraco",
+      "etapa": [
+        "COQUARD",
+        "PEDERSEN",
+        "MEEUS",
+        "TURNER",
+        "LABROSSE",
+        "ROMELE",
+        "TRONCHON",
+        "HOFSTETTER",
+        "AULAR",
+        "BRENNAN"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "GALL",
+        "ROGLIC",
+        "KUSS",
+        "ONLEY",
+        "CARAPAZ",
+        "SKJELMOSE",
+        "TEJADA",
+        "MUHLBERGER",
+        "OMRZEL"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "PEDERSEN",
+        "HAYTER",
+        "LAPORTE"
+      ],
+      "montana": [
+        "LEKNESSUND",
+        "VAN AERT",
+        "MAS",
+        "FORTUNATO",
+        "BUITRAGO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "VISMA",
+        "INEOS",
+        "XDS ASTANA",
+        "FDJ"
+      ]
     }
   ],
   "bonusFinal": null,
