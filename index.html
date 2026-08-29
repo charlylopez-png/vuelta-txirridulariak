@@ -278,13 +278,17 @@ function cambiarClasificacion(modo){
 }
 
 function calcularPosicionesPrevias(){
-  if(!CLASIFICACION.length) return null;
-  const n = CLASIFICACION[0].porEtapa.length;
-  if(n < 2) return null;
-  const previos = CLASIFICACION.map(f => ({ id: f.id, acumuladoPrevio: f.porEtapa[n-2].acumulado }));
-  previos.sort((a,b)=> b.acumuladoPrevio - a.acumuladoPrevio);
+  const resultadosOrdenados = (DATOS.resultados || []).slice().sort((a,b)=>a.numero-b.numero);
+  if(resultadosOrdenados.length < 2) return null;
+  // Recalculamos la clasificación completa quitando solo la última etapa jugada,
+  // en vez de re-ordenar los totales ya extraídos: así, en caso de empate, se
+  // aplica el mismo criterio de desempate que usa calcularClasificacion (orden
+  // de datos.participantes) en vez de heredar el orden de la clasificación
+  // ACTUAL, que sesgaba el empate a favor de quien ya iba primero hoy.
+  const datosPrevios = Object.assign({}, DATOS, { resultados: resultadosOrdenados.slice(0, -1) });
+  const clasifPrevia = calcularClasificacion(datosPrevios);
   const posMap = {};
-  previos.forEach((p,i)=> posMap[p.id] = i+1);
+  clasifPrevia.forEach((f,i)=> posMap[f.id] = i+1);
   return posMap;
 }
 
