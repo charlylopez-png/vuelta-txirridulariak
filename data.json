@@ -1063,6 +1063,56 @@
         "XDS ASTANA",
         "FDJ"
       ]
+    },
+    {
+      "numero": 9,
+      "nombre": "La Vila Joiosa/Villajoyosa → Alto de Aitana",
+      "etapa": [
+        "MAS",
+        "ONLEY",
+        "ROGLIC",
+        "GALL",
+        "CRISTIAN RODRIGUEZ",
+        "SKJELMOSE",
+        "WIDAR",
+        "TEJADA",
+        "CARAPAZ",
+        "BUITRAGO"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "ONLEY",
+        "CARAPAZ",
+        "SKJELMOSE",
+        "KUSS",
+        "TEJADA",
+        "MUHLBERGER",
+        "OMRZEL"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "PEDERSEN",
+        "HAYTER"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "MAS",
+        "LEKNESSUND",
+        "VAN AERT",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "INEOS",
+        "VISMA",
+        "XDS ASTANA",
+        "EF"
+      ]
     }
   ],
   "bonusFinal": null,
