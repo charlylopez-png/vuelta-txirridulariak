@@ -1113,6 +1113,56 @@
         "XDS ASTANA",
         "EF"
       ]
+    },
+    {
+      "numero": 10,
+      "nombre": "Alcaraz → Elche de la Sierra",
+      "etapa": [
+        "TRONCHON",
+        "CORT",
+        "NYS",
+        "VAN AERT",
+        "ROMELE",
+        "AZPARREN",
+        "FISHER-BLACK",
+        "AULAR",
+        "LABROSSE",
+        "HOFSTETTER"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "ONLEY",
+        "CARAPAZ",
+        "SKJELMOSE",
+        "KUSS",
+        "TEJADA",
+        "MUHLBERGER",
+        "OMRZEL"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "ROMELE",
+        "BRENNAN",
+        "PEDERSEN",
+        "HAYTER"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "MAS",
+        "LEKNESSUND",
+        "VAN AERT",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "INEOS",
+        "XDS ASTANA",
+        "VISMA",
+        "EF"
+      ]
     }
   ],
   "bonusFinal": null,
