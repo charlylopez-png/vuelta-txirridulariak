@@ -1163,6 +1163,56 @@
         "VISMA",
         "EF"
       ]
+    },
+    {
+      "numero": 11,
+      "nombre": "Cartagena → Lorca",
+      "etapa": [
+        "BRENNAN",
+        "COQUARD",
+        "MEEUS",
+        "CORT",
+        "VAN AERT",
+        "HOFSTETTER",
+        "TRONCHON",
+        "ROMELE",
+        "GOVEKAR",
+        "AULAR"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "ONLEY",
+        "CARAPAZ",
+        "SKJELMOSE",
+        "KUSS",
+        "TEJADA",
+        "MUHLBERGER",
+        "OMRZEL"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "HAYTER"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "MAS",
+        "LEKNESSUND",
+        "VAN AERT",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "INEOS",
+        "XDS ASTANA",
+        "VISMA",
+        "EF"
+      ]
     }
   ],
   "bonusFinal": null,
