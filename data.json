@@ -1213,6 +1213,56 @@
         "VISMA",
         "EF"
       ]
+    },
+    {
+      "numero": 12,
+      "nombre": "Vera → Calar Alto",
+      "etapa": [
+        "OMRZEL",
+        "BERRADE",
+        "BUITRAGO",
+        "LUTSENKO",
+        "VANSEVENANT",
+        "MAS",
+        "GALL",
+        "ROGLIC",
+        "CARAPAZ",
+        "MUHLBERGER"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "CARAPAZ",
+        "ONLEY",
+        "OMRZEL",
+        "SKJELMOSE",
+        "KUSS",
+        "MUHLBERGER",
+        "TEJADA"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "HAYTER"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "MAS",
+        "LUTSENKO",
+        "LEKNESSUND"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "BAHRAIN",
+        "INEOS",
+        "XDS ASTANA",
+        "EF"
+      ]
     }
   ],
   "bonusFinal": null,
