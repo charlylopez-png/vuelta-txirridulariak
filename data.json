@@ -1363,6 +1363,56 @@
         "EF",
         "INEOS"
       ]
+    },
+    {
+      "numero": 15,
+      "nombre": "Palma del Río → Córdoba",
+      "etapa": [
+        "VAN AERT",
+        "ROMELE",
+        "NYS",
+        "DEBRUYNE",
+        "LEKNESSUND",
+        "COVI",
+        "TRONCHON",
+        "MULUBRHAN",
+        "KUNG",
+        "OLIVEIRA"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "GALL",
+        "ROGLIC",
+        "CARAPAZ",
+        "ONLEY",
+        "OMRZEL",
+        "SKJELMOSE",
+        "CRISTIAN RODRIGUEZ",
+        "BERTHET",
+        "KUSS"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "LEKNESSUND"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "MAS",
+        "LEKNESSUND",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "XDS ASTANA",
+        "BAHRAIN",
+        "EF",
+        "FDJ"
+      ]
     }
   ],
   "bonusFinal": null,
