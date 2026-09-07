@@ -1263,6 +1263,56 @@
         "XDS ASTANA",
         "EF"
       ]
+    },
+    {
+      "numero": 13,
+      "nombre": "Almuñécar → Loja",
+      "etapa": [
+        "VAN AERT",
+        "PARET-PEINTRE",
+        "BRENNAN",
+        "WIDAR",
+        "ALBANESE",
+        "FISHER-BLACK",
+        "VERMAERKE",
+        "BISIAUX",
+        "DALBY",
+        "ZANA"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "CARAPAZ",
+        "ONLEY",
+        "OMRZEL",
+        "SKJELMOSE",
+        "KUSS",
+        "TEJADA",
+        "BERTHET"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "HAYTER"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "MAS",
+        "LEKNESSUND",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "BAHRAIN",
+        "INEOS",
+        "XDS ASTANA",
+        "FDJ"
+      ]
     }
   ],
   "bonusFinal": null,
