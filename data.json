@@ -1313,6 +1313,56 @@
         "XDS ASTANA",
         "FDJ"
       ]
+    },
+    {
+      "numero": 14,
+      "nombre": "Jaén → Sierra de La Pandera",
+      "etapa": [
+        "BRENNER",
+        "BUITRAGO",
+        "CRISTIAN RODRIGUEZ",
+        "SOSA",
+        "PARET-PEINTRE",
+        "BERTHET",
+        "NORDHAGEN",
+        "ZANA",
+        "CALZONI",
+        "ALMEIDA"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "GALL",
+        "ROGLIC",
+        "CARAPAZ",
+        "ONLEY",
+        "OMRZEL",
+        "SKJELMOSE",
+        "CRISTIAN RODRIGUEZ",
+        "BERTHET",
+        "KUSS"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "HAYTER"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "MAS",
+        "FORTUNATO",
+        "LEKNESSUND"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "XDS ASTANA",
+        "BAHRAIN",
+        "EF",
+        "INEOS"
+      ]
     }
   ],
   "bonusFinal": null,
