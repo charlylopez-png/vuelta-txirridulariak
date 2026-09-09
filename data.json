@@ -1413,6 +1413,56 @@
         "EF",
         "FDJ"
       ]
+    },
+    {
+      "numero": 16,
+      "nombre": "Cortegana → La Rábida. Palos de la Frontera",
+      "etapa": [
+        "BRENNAN",
+        "COQUARD",
+        "BRAET",
+        "MEEUS",
+        "CORT",
+        "VAN AERT",
+        "HOFSTETTER",
+        "ALBANESE",
+        "DAINESE",
+        "MACIAS"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "GALL",
+        "ROGLIC",
+        "CARAPAZ",
+        "ONLEY",
+        "OMRZEL",
+        "SKJELMOSE",
+        "CRISTIAN RODRIGUEZ",
+        "BERTHET",
+        "KUSS"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "MEEUS"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "MAS",
+        "LEKNESSUND",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "XDS ASTANA",
+        "BAHRAIN",
+        "EF",
+        "FDJ"
+      ]
     }
   ],
   "bonusFinal": null,
