@@ -1463,6 +1463,56 @@
         "EF",
         "FDJ"
       ]
+    },
+    {
+      "numero": 17,
+      "nombre": "Dos Hermanas → Sevilla",
+      "etapa": [
+        "BRENNAN",
+        "MEEUS",
+        "CORT",
+        "ROMELE",
+        "DE SCHUYTENEER",
+        "LAURANCE",
+        "MIQUEL",
+        "MACIAS",
+        "HOFSTETTER",
+        "COQUARD"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "GALL",
+        "ROGLIC",
+        "CARAPAZ",
+        "ONLEY",
+        "OMRZEL",
+        "SKJELMOSE",
+        "CRISTIAN RODRIGUEZ",
+        "BERTHET",
+        "KUSS"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "MEEUS"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "MAS",
+        "LEKNESSUND",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "XDS ASTANA",
+        "BAHRAIN",
+        "EF",
+        "FDJ"
+      ]
     }
   ],
   "bonusFinal": null,
