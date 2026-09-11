@@ -1513,6 +1513,56 @@
         "EF",
         "FDJ"
       ]
+    },
+    {
+      "numero": 18,
+      "nombre": "El Puerto de Santa María → Jerez de la Frontera",
+      "etapa": [
+        "KUNG",
+        "THORNLEY",
+        "ALMEIDA",
+        "ROGLIC",
+        "VAN AERT",
+        "FISHER-BLACK",
+        "ARMIRAIL",
+        "OLIVEIRA",
+        "HAYTER",
+        "AZPARREN"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "CARAPAZ",
+        "ONLEY",
+        "OMRZEL",
+        "BERTHET",
+        "SKJELMOSE",
+        "CRISTIAN RODRIGUEZ",
+        "TEJADA"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "MEEUS"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "MAS",
+        "LEKNESSUND",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "XDS ASTANA",
+        "EF",
+        "FDJ",
+        "BAHRAIN"
+      ]
     }
   ],
   "bonusFinal": null,
