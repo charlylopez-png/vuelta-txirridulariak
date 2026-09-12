@@ -1563,6 +1563,56 @@
         "FDJ",
         "BAHRAIN"
       ]
+    },
+    {
+      "numero": 19,
+      "nombre": "Vélez-Málaga → Peñas Blancas. Estepona",
+      "etapa": [
+        "DUNBAR",
+        "BUITRAGO",
+        "GLOAG",
+        "BERRADE",
+        "CAMPRUBI",
+        "LEKNESSUND",
+        "MARTIN",
+        "CHRIS HAMILTON",
+        "VERMAERKE",
+        "SAMITIER"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "CARAPAZ",
+        "ONLEY",
+        "OMRZEL",
+        "BERTHET",
+        "CRISTIAN RODRIGUEZ",
+        "SKJELMOSE",
+        "TEJADA"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "MEEUS"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "LEKNESSUND",
+        "MAS",
+        "FORTUNATO"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "XDS ASTANA",
+        "FDJ",
+        "BAHRAIN",
+        "INEOS"
+      ]
     }
   ],
   "bonusFinal": null,
