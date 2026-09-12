@@ -1613,6 +1613,56 @@
         "BAHRAIN",
         "INEOS"
       ]
+    },
+    {
+      "numero": 20,
+      "nombre": "La Calahorra → Collado del Alguacil",
+      "etapa": [
+        "LANDA",
+        "JOHANNESSEN",
+        "DEBRUYNE",
+        "MIQUEL",
+        "BERRADE",
+        "HIRT",
+        "NORDHAGEN",
+        "KUSS",
+        "CALZONI",
+        "FORTUNATO"
+      ],
+      "etapaEquipos": [],
+      "general": [
+        "MAS",
+        "ROGLIC",
+        "GALL",
+        "CARAPAZ",
+        "KUSS",
+        "ONLEY",
+        "OMRZEL",
+        "BERTHET",
+        "CRISTIAN RODRIGUEZ",
+        "TEJADA"
+      ],
+      "puntos": [
+        "VAN AERT",
+        "BRENNAN",
+        "ROMELE",
+        "COQUARD",
+        "MEEUS"
+      ],
+      "montana": [
+        "BUITRAGO",
+        "VAN AERT",
+        "LEKNESSUND",
+        "LANDA",
+        "JOHANNESSEN"
+      ],
+      "equipos": [
+        "DECATHLON",
+        "XDS ASTANA",
+        "BAHRAIN",
+        "FDJ",
+        "INEOS"
+      ]
     }
   ],
   "bonusFinal": null,
